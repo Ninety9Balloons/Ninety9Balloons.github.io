@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninety9Balloons Entertainment</title>
+    <!-- Google Fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="whole-page-container">
+        <header>
+            <nav>
+                <ul class="fullscreen-nav">
+                    <li class="logo-home"><img class="logo" src="Images/LogoWhite.png"
+                            alt="Ninety9Balloons Small Logo"><span class="home"><a href="index.html">Home</a></span>
+                    </li>
+                    <li><a class="btn" href="editing.html">
+                            <div>Editing</div>
+                        </a></li>
+                    <li><a class="btn" href="vfx.html">
+                            <div>VFX</div>
+                        </a></li>
+                    <li><a class="btn" href="gfx.html">
+                            <div>Motion GFX</div>
+                        </a></li>
+                    <li><a class="btn" href="contact.html">
+                            <div>Contact</div>
+                        </a></li>
+                </ul>
+                <ul class="mobile-nav">
+                    <li class="mobile-logo-home"><a href="index.html"><img class="logo" src="Images/LogoWhite.png"
+                            alt="Ninety9Balloons Small Logo"></a>
+                    </li>
+                    <li class="hamburger"><img class="hamburger" src="Images/hamburger.png" alt="hambuger icon"></li>
+                    <li class="close"><img class="close-icon" src="Images/close.png" alt="close icon"></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Container for the Lens Dirt overlay -->
+        <div class="container">
+            <div class="lens-dirt"><img src="Images/LensDirt-26.png" alt="Lens Dirt Overlay">
+            </div>
+            <!-- Literal magic -->
+            <div class="parallax">
+                <!-- Text Layer -->
+                <div class="parallax-layer layer0">
+                    <div class="flex-column-container">
+                        <div class="hero-title hero-box">
+                            <h1>Ninety9Balloons</h1>
+                            <h2>Entertainment</h2>
+                            <span class="subheader-text">
+                                Editing &#8226; Color &#8226; VFX
+                            </span>
+                        </div>
+                        <section class="hero-box">
+                            <div class="hero-video-editing hero-text">
+                                <img class="video-editing switch" src="Videos\Video Editing Img0.png"
+                                    alt="Video Editing">
+                                <img id="editing-button" class="video-editing-gif hover" src="Videos\Video Editing.gif"
+                                    onclick="location.href = 'editing.html'" style="cursor: pointer;"
+                                    alt="Video Editing gif">
+                            </div>
+                        </section>
+                        <section class="hero-vfx hero-box">
+                            <div class="hero-video-editing hero-text">
+                                <img class="vfx switch" src="Videos\VFX Text0.png" alt="VFX">
+                                <img class="vfx-gif hover" src="Videos\VFX.gif" onclick="location.href = 'vfx.html'"
+                                    style="cursor: pointer;" alt="VFX gif">
+                            </div>
+                        </section>
+                        <section class="hero-motion-graphics hero-box">
+                            <div class="hero-video-editing hero-text">
+                                <img class="motion-gfx switch" src="Videos\Motion Graphics Text1.png"
+                                    alt="Motion Graphics">
+                                <img class="motion-gfx-gif hover" src="Videos\Motion Graphics.gif"
+                                    onclick="location.href = 'gfx.html'" style="cursor: pointer;"
+                                    alt="Motion Graphics gif">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- End Text Layer -->
+                <div class="parallax-layer layer1"></div> <!-- Foreground -->
+                <div class="parallax-layer layer2"></div> <!-- Midground -->
+                <div class="parallax-layer layer3"></div> <!-- Background -->
+            </div>
+        </div>
+
+        <aside class="side-menu-position side-menu-design" id="side-menu">
+            <ul class="side-menu-content">
+                <li><a href="editing.html">Editing</a></li>
+                <li><a href="vfx.html">VFX</a></li>
+                <li><a href="gfx.html">Motion Graphics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </aside>
+
+        <div class="mobile-hero-text">
+            <h1>Ninety9Balloons</h1>
+            <h2>Entertainment</h2>
+            <span class="mobile-subheader">
+                Editing &#8226; Color &#8226; VFX
+            </span>
+        </div>
+
+        <footer>
+            <p>footer info</p>
+        </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
