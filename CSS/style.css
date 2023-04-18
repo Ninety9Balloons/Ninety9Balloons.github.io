@@ -435,7 +435,6 @@ footer {
 iframe {
     width: 1000px;
     border-radius: 10px;
-    box-shadow: 0 0 30px black;
 }
 
 .video-thumbnails {
