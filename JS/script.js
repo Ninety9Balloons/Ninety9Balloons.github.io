@@ -25,8 +25,9 @@ for (let i = 0; i < videos.length; i++) {
 //     }
 //   )}
 
-// Clicking a thumbnail in the video pages and showing which video thumbnail is active while deactiving the previous video
 
+
+// Clicking a thumbnail in the video pages and showing which video thumbnail is active while deactiving the previous video
 
 // Cycling through the thumbnails
 function toggleItem(elem) {
