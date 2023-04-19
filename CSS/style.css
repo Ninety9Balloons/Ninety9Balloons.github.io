@@ -10,9 +10,15 @@
 /* Adding in external font family */
 
 @font-face {
-    font-family: "Lemonmilk";
-    src: local("LEMONMILK-BOLD"),
-        url("LEMONMILK-Bold.otf") format("opentype") tech(color-COLRv1), url("LEMONMILK-Bold.otf") format("opentype"), url("LEMONMILK-Bold.otf") format("woff");
+    font-family: 'LEMON MILK';
+    src: url('LEMONMILK-Bold.eot');
+    src: url('LEMONMILK-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LEMONMILK-Bold.woff2') format('woff2'),
+        url('LEMONMILK-Bold.woff') format('woff'),
+        url('LEMONMILK-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Setting the body up */
@@ -20,7 +26,7 @@
 body {
     width: 100%;
     background: rgb(232, 232, 232);
-    background: radial-gradient(circle, rgba(232, 232, 232, 1) 0%, rgba(180, 153, 153, 1) 100%);
+    background: radial-gradient(circle, rgba(232, 232, 232, 1) 0%, rgb(219, 180, 180) 100%);
     position: relative;
     /* Gets rid of the double scroll bar caused from the parallax */
     overflow-x: hidden;
@@ -292,14 +298,14 @@ a {
 
 .hero-box>h1,
 .hero-text>h1 {
-    font-family: 'Lemonmilk';
+    font-family: 'LEMON MILK';
     text-align: center;
     padding-top: 100px;
     letter-spacing: 4px;
 }
 
 .hero-box>h2 {
-    font-family: 'Lemonmilk';
+    font-family: 'LEMON MILK';
     font-size: 5vw;
     border-bottom: solid black 5px;
 }
@@ -313,10 +319,15 @@ a {
     font-size: 6vw;
 }
 
+.hero-box:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 /* Subheader Effect */
 
 .subheader-text {
-    font-family: 'Lemonmilk';
+    font-family: 'LEMON MILK';
     font-size: 3vw;
     margin-bottom: 350px;
     text-shadow: rgb(235, 78, 78, .5) 5px 0px;
@@ -405,7 +416,7 @@ footer > p {
 .side-menu-content {
     color: #fff;
     font-size: 40px;
-    font-family: lemonmilk;
+    font-family: 'LEMON MILK';
     margin: 50px;
     text-align: center;
 }
@@ -424,6 +435,12 @@ footer > p {
 
 .video-pages {
     overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.video-pages::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .video-container {
@@ -479,7 +496,7 @@ iframe {
 }
 
 .form {
-    font-family: lemonmilk;
+    font-family: 'LEMON MILK';
     width: 1000px;
     max-width: 80%;
     border-radius: 20px;
@@ -504,14 +521,14 @@ iframe {
 }
 
 .form-button {
-    width: 25%;
+    width: 30%;
     padding: 10px;
     margin-top: 20px;
     border: none;
     background:rgb(235, 78, 78);
     color: white;
     transition: .5s;
-    font-family: lemonmilk;
+    font-family: 'LEMON MILK';
     cursor: pointer;
 }
 
@@ -531,7 +548,7 @@ iframe {
 @media only screen and (max-width: 768px) {
     body {
         width: 100%;
-        background: radial-gradient(circle, rgba(232, 232, 232, 1) 0%, rgba(180, 153, 153, 1) 100%);
+        background: radial-gradient(circle, rgba(232, 232, 232, 1) 0%, rgb(219, 180, 180) 100%);
         height: 100%;
     }
 
@@ -584,20 +601,27 @@ iframe {
     }
 
     .mobile-hero-text h1 {
-        font-family: lemonmilk;
+        font-family: 'LEMON MILK';
         font-size: 7vw;
 
     }
 
     .mobile-hero-text h2 {
-        font-family: lemonmilk;
+        font-family: 'LEMON MILK';
         font-size: 5vw;
         border-bottom: solid black 2px;
     }
 
     .mobile-subheader {
-        font-family: lemonmilk;
+        font-family: 'LEMON MILK';
         font-size: 3vw;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
     }
 
     /* Video Pages */
@@ -621,11 +645,17 @@ iframe {
         width: 90%;
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-    }
+}
 
+/* Contact us page */
+
+.contact-us-container {
+
+    position: relative;
+}
+
+.contact-us-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
