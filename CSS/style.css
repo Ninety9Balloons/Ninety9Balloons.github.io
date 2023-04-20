@@ -37,6 +37,7 @@ body {
 .whole-page-container {
     min-height: 100vh;
     position: relative;
+    overflow-y: auto;
 
 }
 
