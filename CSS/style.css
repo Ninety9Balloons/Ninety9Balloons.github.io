@@ -13,8 +13,8 @@
     font-family: 'LEMON MILK';
     src: url('LEMONMILK-Bold.eot');
     src: url('LEMONMILK-Bold.eot?#iefix') format('embedded-opentype');
-    src: url('LEMONMILK-Bold.woff2') format('woff2');
-    src: url('LEMONMILK-Bold.woff') format('woff');
+    src: url('lemonmilk-bold-webfont.woff2') format('woff2');
+    src: url('lemonmilk-bold-webfont.woff') format('woff');
     src: url('LEMONMILK-Bold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
