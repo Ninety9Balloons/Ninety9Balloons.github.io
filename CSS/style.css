@@ -12,10 +12,10 @@
 @font-face {
     font-family: 'LEMON MILK';
     src: url('LEMONMILK-Bold.eot');
-    src: url('LEMONMILK-Bold.eot?#iefix') format('embedded-opentype'),
-        url('LEMONMILK-Bold.woff2') format('woff2'),
-        url('LEMONMILK-Bold.woff') format('woff'),
-        url('LEMONMILK-Bold.ttf') format('truetype');
+    src: url('LEMONMILK-Bold.eot?#iefix') format('embedded-opentype');
+    src: url('LEMONMILK-Bold.woff2') format('woff2');
+    src: url('LEMONMILK-Bold.woff') format('woff');
+    src: url('LEMONMILK-Bold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -389,7 +389,7 @@ footer {
     align-items: center;
 }
 
-footer > p {
+footer>p {
     color: white;
     font-family: lato;
 }
@@ -435,12 +435,15 @@ footer > p {
 
 .video-pages {
     overflow-y: scroll;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
-.video-pages::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+.video-pages::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 .video-container {
@@ -507,13 +510,14 @@ iframe {
     padding: 40px;
 }
 
-.inner-form input, .inner-form textarea {
+.inner-form input,
+.inner-form textarea {
     display: block;
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
     border: none;
-    background:rgb(232, 232, 232)
+    background: rgb(232, 232, 232)
 }
 
 .inner-form textarea {
@@ -525,7 +529,7 @@ iframe {
     padding: 10px;
     margin-top: 20px;
     border: none;
-    background:rgb(235, 78, 78);
+    background: rgb(235, 78, 78);
     color: white;
     transition: .5s;
     font-family: 'LEMON MILK';
@@ -537,7 +541,7 @@ iframe {
 }
 
 .needText::placeholder {
-    color:rgb(235, 78, 78);
+    color: rgb(235, 78, 78);
     font-weight: 600;
 }
 
