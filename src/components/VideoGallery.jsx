@@ -37,7 +37,7 @@ export default function VideoGallery({ projects }) {
             className="flex h-full items-center justify-center bg-cover bg-center"
             style={
               current.image
-                ? { backgroundImage: `url("${current.image}")` }
+                ? { backgroundImage: `url("${import.meta.env.BASE_URL}${current.image.replace(/^\//, '')}")` }
                 : undefined
             }
           >
@@ -94,7 +94,7 @@ export default function VideoGallery({ projects }) {
             style={
               p.image
                 ? {
-                    backgroundImage: `url("${p.image}")`,
+                    backgroundImage: `url("${import.meta.env.BASE_URL}${p.image.replace(/^\//, '')}")`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }

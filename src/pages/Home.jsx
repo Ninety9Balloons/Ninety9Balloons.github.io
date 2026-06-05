@@ -64,7 +64,7 @@ export default function Home() {
 
                 {/* The Animated GIF (Hidden by default, block on group hover) */}
                 <img
-                  src={gif}
+                  src={`${import.meta.env.BASE_URL}${gif}`}
                   alt="Card display animated"
                   className="absolute inset-0 w-full h-full object-cover hidden group-hover:block"
                 />
