@@ -43,7 +43,7 @@ export default function ProjectCard({ title, tags, vimeoUrl, image }) {
       style={
         image
           ? {
-              backgroundImage: `url('${import.meta.env.BASE_URL}${image.replace(/^\//, "")}')`,
+              backgroundImage: `url('${image}')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }
