@@ -9,7 +9,7 @@ const timeline = [
   {
     year: "2020",
     title: "IATSE Local 161 — Film & TV",
-    body: "Joined the union as an Accounts Payable Specialist, hitting the analytical and data site of the Film industry.",
+    body: "Joined the union as an Accounts Payable Specialist, hitting the analytical and data side of the Film Industry.",
   },
   {
     year: "2023",
