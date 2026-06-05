@@ -4,7 +4,7 @@ const categories = [
   {
     to: "/editing",
     image: "video editing img0.png",
-    gif: "video editing.gif",
+    gif: "video-editing-sm-2.webp",
   },
   {
     to: "/vfx",
@@ -14,7 +14,7 @@ const categories = [
   {
     to: "/motion-gfx",
     image: "motion graphics text1.png",
-    gif: "motion graphics.gif",
+    gif: "motion-graphics-sm-3.webp",
   },
 ];
 
