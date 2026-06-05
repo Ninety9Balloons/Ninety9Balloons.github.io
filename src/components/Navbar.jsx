@@ -6,6 +6,7 @@ const links = [
   { to: '/editing', label: 'Editing' },
   { to: '/vfx', label: 'VFX' },
   { to: '/motion-gfx', label: 'Motion GFX' },
+  { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
 ]
 
